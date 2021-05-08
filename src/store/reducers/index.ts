@@ -1,3 +1,2 @@
-export * from './onboardReducer';
-export * from './authReducer';
-export * from './gameReducer';
+export * from './onboard';
+export * from './auth';

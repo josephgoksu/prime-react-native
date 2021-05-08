@@ -1,4 +1,4 @@
-import { AUTH_CHANGE, LOGOUT_USER } from '../constants';
+import { AUTH_CHANGE, LOGOUT_USER } from '../reducers';
 
 interface Auth {
   loggedIn: boolean;

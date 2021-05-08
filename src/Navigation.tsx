@@ -1,9 +1,11 @@
 import 'react-native-gesture-handler';
 
 import React, { useEffect } from 'react';
-
+import { shallowEqual, useDispatch, useSelector } from 'react-redux';
+import RNBootSplash from 'react-native-bootsplash';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+
 import {
   OnboardingScreen,
   Onboarding2Screen,
@@ -11,10 +13,7 @@ import {
   AboutScreen,
   GetStartedScreen,
 } from './screens';
-
-import { shallowEqual, useDispatch, useSelector } from 'react-redux';
-
-import RNBootSplash from 'react-native-bootsplash';
+import { iSuperOnboard } from './store/reducers';
 
 const { Navigator, Screen } = createStackNavigator();
 
@@ -22,11 +21,7 @@ const Navigation = () => {
   const dispatch = useDispatch();
 
   const { hasOnboarded } = useSelector(
-    (state: {
-      onboard: {
-        hasOnboarded: boolean;
-      };
-    }) => ({
+    (state: iSuperOnboard) => ({
       hasOnboarded: state.onboard.hasOnboarded,
     }),
     shallowEqual,
@@ -48,18 +43,16 @@ const Navigation = () => {
     </Navigator>
   );
 
-  const forFade = ({ current }) => ({
-    cardStyle: {
-      opacity: current.progress,
-    },
-  });
-
   const OnboardingNavigator = () => (
     <Navigator
       headerMode="none"
       screenOptions={{
         headerShown: false,
-        cardStyleInterpolator: forFade,
+        cardStyleInterpolator: ({ current }) => ({
+          cardStyle: {
+            opacity: current.progress,
+          },
+        }),
       }}>
       <Screen name="Onboarding" component={OnboardingScreen} />
       <Screen name="Onboarding2" component={Onboarding2Screen} />

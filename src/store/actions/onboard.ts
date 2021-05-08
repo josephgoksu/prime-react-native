@@ -1,4 +1,4 @@
-import { ONBOARD_CHANGE } from '../constants';
+import { ONBOARD_CHANGE } from '../reducers';
 
 interface Onboard {
   hasOnboarded: boolean;

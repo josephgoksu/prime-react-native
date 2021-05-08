@@ -9,12 +9,15 @@ import {
   TopNavigationAction,
 } from '@ui-kitten/components';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { useNavigation } from '@react-navigation/native';
 
 interface ContentProps {}
 
-const Content = (props: ContentProps) => {
+export const Content: React.FC<ContentProps> = props => {
+  const navigation = useNavigation();
+
   const navigateBack = () => {
-    // navigation.goBack();
+    navigation.goBack();
   };
 
   const BackAction = () => (
@@ -42,8 +45,6 @@ const Content = (props: ContentProps) => {
     </SafeAreaView>
   );
 };
-
-export default Content;
 
 const styles = StyleSheet.create({
   container: {},
