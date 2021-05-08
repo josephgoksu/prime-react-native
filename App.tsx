@@ -11,7 +11,7 @@ import { enableScreens } from 'react-native-screens';
 import { Provider as StoreProvider } from 'react-redux';
 import { persistor, store } from './src/store/configureStore';
 import { PersistGate } from 'redux-persist/integration/react';
-import Navigation from './src/Navigation';
+import Navigation from './src/navigation';
 
 enableScreens();
 

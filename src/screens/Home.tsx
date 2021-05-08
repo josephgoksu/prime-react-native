@@ -14,7 +14,7 @@ import {
 
 import { Layout, Text } from '@ui-kitten/components';
 
-import { CustomTopNavigation } from '../components/CustomTopNavigation';
+import { CustomTopNavigation } from '../components/topNavigation';
 import { shallowEqual, useDispatch, useSelector } from 'react-redux';
 
 import { game } from '../store/actions/game';
