@@ -2,6 +2,11 @@ package com.lightreactnative;
 
 import com.facebook.react.ReactActivity;
 
+/**
+ * react-native-screens
+ */
+import android.os.Bundle;
+
 public class MainActivity extends ReactActivity {
 
   /**
@@ -11,5 +16,14 @@ public class MainActivity extends ReactActivity {
   @Override
   protected String getMainComponentName() {
     return "LightReactNative";
+  }
+
+  /**
+   * react-native-screens
+   * @param savedInstanceState
+   */
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(null);
   }
 }

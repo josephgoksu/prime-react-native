@@ -14,9 +14,19 @@
 
 ## Showcase
 
+# Onboarding Screens
+
 <img src="./showcase/1.png" width="250">
 <img src="./showcase/2.png" width="250">
 <img src="./showcase/3.png" width="250">
+
+# Unit Testing
+
+- Jest is ready to use
+- Mockups are ready too
+
+<img src="./showcase/jest-1.png" width="800">
+<img src="./showcase/jest-2.png" width="800">
 
 ## Tech
 

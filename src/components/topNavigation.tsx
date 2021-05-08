@@ -10,11 +10,13 @@ import {
 import { useNavigation } from '@react-navigation/native';
 import { shallowEqual, useDispatch, useSelector } from 'react-redux';
 
-const BackIcon = props => <Icon {...props} name="arrow-back" />;
+const BackIcon = (props: any) => <Icon {...props} name="arrow-back" />;
 
-const AlertIcon = props => <Icon {...props} name="alert-circle-outline" />;
+const AlertIcon = (props: any) => (
+  <Icon {...props} name="alert-circle-outline" />
+);
 
-const LogoutIcon = props => <Icon {...props} name="log-out" />;
+const LogoutIcon = (props: any) => <Icon {...props} name="log-out" />;
 
 interface CustomTopNavigationProps {
   leftComponent?: ReactNode;

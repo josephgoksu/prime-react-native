@@ -24,7 +24,7 @@ export const Content: React.FC<ContentProps> = props => {
     <TopNavigationAction icon={BackIcon} onPress={navigateBack} />
   );
 
-  const BackIcon = props => <Icon {...props} name="arrow-back" />;
+  const BackIcon = (props: any) => <Icon {...props} name="arrow-back" />;
 
   return (
     <SafeAreaView style={{ flex: 1 }}>
