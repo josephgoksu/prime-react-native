@@ -9,8 +9,6 @@ import {
 } from '@ui-kitten/components';
 import { useNavigation } from '@react-navigation/native';
 import { shallowEqual, useDispatch, useSelector } from 'react-redux';
-import { gameReseted } from '../store/actions/game';
-import { iGameReducer } from '../store/reducers';
 
 const BackIcon = props => <Icon {...props} name="arrow-back" />;
 
@@ -31,14 +29,6 @@ export const CustomTopNavigation = ({
 
   const [menuVisible, setMenuVisible] = React.useState(false);
 
-  const { hasStarted, level } = useSelector(
-    (state: { game: iGameReducer }) => ({
-      hasStarted: state.game.hasStarted,
-      level: state.game.level,
-    }),
-    shallowEqual,
-  );
-
   const toggleMenu = () => {
     setMenuVisible(!menuVisible);
   };
@@ -58,26 +48,20 @@ export const CustomTopNavigation = ({
       </View>
 
       <View style={styles.titleContainer}>
-        <Text style={styles.title}>
-          {hasStarted ? `LEVEL ${level}` : 'GAME'}{' '}
-        </Text>
+        <Text style={styles.title}>Title</Text>
       </View>
 
       <View style={{ ...styles.avatar, ...styles.avatarContainer }}>
-        {hasStarted && (
-          <OverflowMenu
-            anchor={renderMenuAction}
-            visible={menuVisible}
-            onBackdropPress={toggleMenu}>
-            <MenuItem
-              accessoryLeft={LogoutIcon}
-              title="Quit"
-              onPress={() => {
-                dispatch(gameReseted());
-              }}
-            />
-          </OverflowMenu>
-        )}
+        <OverflowMenu
+          anchor={renderMenuAction}
+          visible={menuVisible}
+          onBackdropPress={toggleMenu}>
+          <MenuItem
+            accessoryLeft={LogoutIcon}
+            title="Quit"
+            onPress={() => {}}
+          />
+        </OverflowMenu>
       </View>
     </View>
   );

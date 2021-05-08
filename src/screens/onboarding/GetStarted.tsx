@@ -1,6 +1,7 @@
 import { Layout, Text } from '@ui-kitten/components';
 import * as React from 'react';
 import { View, StyleSheet, TouchableOpacity } from 'react-native';
+import pJson from '../../../package.json';
 
 import { useDispatch } from 'react-redux';
 import { changeOnboard } from '../../store/actions';
@@ -18,11 +19,11 @@ export const GetStartedScreen = (props: GetStartedProps) => {
           <View style={styles.ball} />
           <View style={styles.textContent}>
             <Text style={styles.text} category="s1">
-              A new way of learn
+              Easy to develop
             </Text>
 
             <Text style={styles.text} category="h1">
-              Start Learn
+              Template Version: {pJson.version}
             </Text>
             <Text
               style={{
@@ -30,8 +31,7 @@ export const GetStartedScreen = (props: GetStartedProps) => {
                 fontSize: 24,
               }}
               category="p1">
-              The goal of the app is to teaching kids different animals with the
-              game way.
+              RN Version: {pJson.dependencies['react-native']}
             </Text>
           </View>
         </Layout>

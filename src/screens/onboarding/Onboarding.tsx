@@ -1,7 +1,7 @@
 import { Layout, Text } from '@ui-kitten/components';
 import * as React from 'react';
 import { View, StyleSheet, Image } from 'react-native';
-import NextButton from '../../assets/Button/button.png';
+import NextButton from '../../assets/button/button.png';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { useNavigation } from '@react-navigation/native';
 
@@ -18,10 +18,10 @@ export const OnboardingScreen = (props: OnboardingProps) => {
           <View style={styles.ball} />
           <View style={styles.textContent}>
             <Text style={styles.text} category="h1">
-              Learn
+              The
             </Text>
             <Text style={styles.text} category="h1">
-              Animals
+              Template
             </Text>
             <Text
               style={{
@@ -29,7 +29,7 @@ export const OnboardingScreen = (props: OnboardingProps) => {
                 fontSize: 24,
               }}
               category="p1">
-              Designed for kids. Loved by parents.
+              Designed for lazy devs.
             </Text>
           </View>
         </Layout>

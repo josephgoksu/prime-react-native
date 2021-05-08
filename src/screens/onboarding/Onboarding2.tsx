@@ -1,7 +1,7 @@
 import { Layout, Text } from '@ui-kitten/components';
 import * as React from 'react';
 import { View, StyleSheet, Image } from 'react-native';
-import NextButton from '../../assets/Button/button.png';
+import NextButton from '../../assets/button/button.png';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { useNavigation } from '@react-navigation/native';
 
@@ -19,7 +19,7 @@ export const Onboarding2Screen = (props: Onboarding2Props) => {
             <View style={styles.ball} />
             <View style={styles.textContent}>
               <Text style={styles.text} category="h1">
-                20 Different Animals
+                UI-ready
               </Text>
               <Text
                 style={{
@@ -27,7 +27,7 @@ export const Onboarding2Screen = (props: Onboarding2Props) => {
                   fontSize: 24,
                 }}
                 category="p1">
-                5 different level, 20 different animals.
+                Dark-Light mode support
               </Text>
             </View>
           </Layout>

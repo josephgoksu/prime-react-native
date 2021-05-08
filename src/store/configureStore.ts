@@ -21,9 +21,6 @@ const enhancer = composeEnhancers(
   /* other store enhancers if any */
 );
 
-// then run the saga
-sagaMiddleware.run(mySaga);
-
 // Middleware: Redux Persist Config
 const persistConfig = {
   // Root
@@ -33,7 +30,7 @@ const persistConfig = {
   // Whitelist (Save Specific Reducers)
   whitelist: ['auth', 'onboard'],
   // Blacklist (Don't Save Specific Reducers)
-  blacklist: ['game'],
+  blacklist: [],
 };
 
 // Middleware: Redux Persist Persisted Reducer
