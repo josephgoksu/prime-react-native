@@ -1,31 +1,31 @@
-<img src="./showcase/0.png" >
-
-<br>
-
 # Light RN Template
 
 #### Designed for smart (lazy) developers
 
 <br>
 
-## Navigation
+<img src="./showcase/0.png" >
 
-1. Onboard (3 Screens)
-2. Main
-   - Home
-   - About
-   - Content
+<br>
 
-## Showcase
+### Setup
+
+```bash
+cd /path/to/project
+```
+
+```bash
+bash ./setup
+```
+
+```bash
+❓  What is the name of the new project?
+Write the new project name here
+```
 
 # Onboarding Screens
 
 <img src="./showcase/1.png" width="750">
-
-# Unit Testing
-
-- Jest is ready to use
-- Mockups are ready too
 
 <img src="./showcase/2.png" width="750">
 
