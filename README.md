@@ -1,26 +1,39 @@
-# Light RN Template
+# 📱 Light React Native Template (Preview)
 
-#### Designed for smart (lazy) developers
+#### All-In-One Template, designed for **smart** (lazy) developers
 
-<br>
+The template for React Native that includes all you need to build amazing projects 🔥
 
-<img src="./showcase/0.png" >
+- 📏 **ESLint** — Pluggable JavaScript linter
+- 💖 **Prettier** - Opinionated Code Formatter
+- 🌘 **Dark Mode** - Support dark mode
+- 🌘 **UI Kit** - Beautiful UI
 
-<br>
+## 🚀 Getting started
 
-### Setup
-
-```bash
-cd /path/to/project
-```
+The best way to start with this template is using `setup.sh`
 
 ```bash
 bash ./setup
 ```
 
 ```bash
-❓  What is the name of the new project?
-Write the new project name here
+What is the name of the new project ❓
+- Write the new project name here
+```
+
+Almost ready, we're a few steps away
+
+Install node dependencies
+
+```yarn
+yarn install (or npm run install)
+```
+
+Install Dependencies for iOS
+
+```
+npx pod-install
 ```
 
 # Onboarding Screens
