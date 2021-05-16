@@ -36,32 +36,32 @@ Install Dependencies for iOS
 npx pod-install
 ```
 
-# Onboarding Screens
+# 🌼 Onboarding Screens
 
 <img src="./showcase/1.png" width="750">
 
 <img src="./showcase/2.png" width="750">
 
-## Tech
+**Tech**
 
 - React Native
 - Typescript
 
-## Navigation
+**Navigation**
 
 - React-Navigation 5.9+
 
-## UI and Theme
+**UI and Theme**
 
 - @eva-design
 - @ui-kitten/eva-icons
 - react-native-responsive-screen
 
-## Splash Screen
+**Splash Screen**
 
 - react-native-bootsplash
 
-### Store
+**Store**
 
 - Redux
 - Redux-Saga
@@ -69,13 +69,13 @@ npx pod-install
 - Redux-Persist
 - Async-Storage by Community
 
-### Linting and Formating
+**Linting and Formating**
 
 - Eslint
 - Prettier
 - EditorConfig
 
-## Others
+**Others**
 
 - react-native-gesture-handler
 - react-native-reanimated
@@ -83,7 +83,16 @@ npx pod-install
 - react-native-svg
 - react-native-clean-project
 
-## Contributors ✨
+## 🤝 Contributing
+
+1. Fork this repository;
+2. Create your branch: `git checkout -b my-new-feature`;
+3. Commit your changes: `git commit -m 'Add some feature'`;
+4. Push to the branch: `git push origin my-new-feature`.
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for more information.
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 
@@ -95,3 +104,5 @@ npx pod-install
 </table>
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+
+Made with ♥ by <a href="https://joeygoksu.com/">Joey Göksu</a>
