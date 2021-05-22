@@ -4,25 +4,23 @@
 
 The template for React Native that includes all you need to build amazing projects 🔥
 
+- 📱 **React Native** — version **0.64.0**
 - 📏 **ESLint** — Pluggable JavaScript linter
 - 💖 **Prettier** - Opinionated Code Formatter
 - 🌘 **Dark Mode** - Support dark mode
-- 🌘 **UI Kit** - Beautiful UI
+- 🌆 **UI Kit** - Beautiful UI
 
 ## 🚀 Getting started
 
-The best way to start with this template is using `setup.sh`
+The best way to start with the template is to [click here](https://github.com/joeygoksu/LightReactNative/generate).
 
-```bash
-bash ./setup
-```
+Run the `setup.sh` inside the project folder:
 
-```bash
-What is the name of the new project ❓
-- Write the new project name here
-```
+1. `bash ./setup`
+2. Answer to `What is the name of the new project ❓`
+3. Wait until the see success message
 
-Almost ready, we're a few steps away
+_Almost ready_, we're a few steps away
 
 Install node dependencies
 
