@@ -1,17 +1,29 @@
 {
   "name": "lightreactnative",
-  "version": "0.0.1",
-  "private": true,
+  "version": "0.0.2",
+  "description": "All-In-One RN Template for Indie Hackers",
+  "private": false,
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
-    "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "test": "jest --config=jest.config.js --passWithNoTests",
+    "fix": "yarn fix:prettier && yarn fix:eslint",
+    "fix:eslint": "eslint --fix \"**/*.ts\"",
+    "fix:prettier": "prettier --write \"**/*.ts\"",
+    "lint": "yarn lint:eslint && yarn lint:prettier",
+    "lint:eslint": "eslint \"**/*.ts\"",
+    "lint:prettier": "prettier --check \"**/*.ts\"",
     "bundle-ios": "node node_modules/react-native/local-cli/cli.js bundle --entry-file='./index.ios.js' --bundle-output='./ios/LightReactNative/main.jsbundle' --assets-dest='./ios/LightReactNative' --dev=false --platform='ios'",
     "bundle-android": "node node_modules/react-native/local-cli/cli.js bundle --entry-file='./index.android.js' --bundle-output='./android/app/src/main/assets/main.jsbundle' --assets-dest='./android/app/src/main/res/' --dev=false --platform='android'",
     "clean": "react-native-clean-project"
   },
+  "contributors": [
+    {
+      "name": "Joey Goksu",
+      "email": "me@joeygoksu.com"
+    }
+  ],
   "dependencies": {
     "@eva-design/eva": "^2.1.0",
     "@react-native-async-storage/async-storage": "^1.15.4",
@@ -54,8 +66,12 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-sonarjs": "^0.8.0-125",
     "eslint-plugin-standard": "^5.0.0",
+    "husky": "4.3.8",
     "jest": "^26.6.3",
+    "lint-staged": "^11.0.0",
     "metro-react-native-babel-preset": "^0.64.0",
     "react-native-clean-project": "^3.6.3",
     "react-native-svg-transformer": "^0.14.3",
@@ -65,5 +81,17 @@
   },
   "resolutions": {
     "@types/react": "^17"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm run test"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
   }
 }

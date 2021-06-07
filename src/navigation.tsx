@@ -53,7 +53,8 @@ const Navigation = () => {
             opacity: current.progress,
           },
         }),
-      }}>
+      }}
+    >
       <Screen name="Onboarding" component={OnboardingScreen} />
       <Screen name="Onboarding2" component={Onboarding2Screen} />
       <Screen name="GetStarted" component={GetStartedScreen} />
