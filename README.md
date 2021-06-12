@@ -92,6 +92,15 @@ npx pod-install
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for more information.
 
+---
+
+## 🌸 Built with template
+
+- [Vocabulary Builder App](https://github.com/joeygoksu/VocabularyBuilderApp)
+- [Animal Finder Game](https://github.com/joeygoksu/AnimalFinderGame)
+
+---
+
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 
 <table>
