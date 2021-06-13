@@ -5,10 +5,12 @@
 The template for React Native that includes all you need to build amazing projects 🔥
 
 - 📱 **React Native** — version **0.64.0**
+- 🎉 **TypeScript** - Type checking
 - 📏 **ESLint** — Pluggable JavaScript linter
 - 💖 **Prettier** - Opinionated Code Formatter
 - 🌘 **Dark Mode** - Support dark mode
 - 🌆 **UI Kit** - Beautiful UI
+- ⚙️ **RN Dotenv** Environment variable with RN env
 
 ## 🚀 Getting started
 
