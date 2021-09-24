@@ -1,8 +1,8 @@
-# 📱 Light React Native Template (Preview)
+# 📱 prime react native boilerplate (beta)
 
-#### All-In-One Template, designed for **smart** (lazy) developers
+<img src="./showcase/prime-react-native.jpg" width="750">
 
-The template for React Native that includes all you need to build amazing projects 🔥
+The ultimate collection of production-ready, flexible and accessible React Native Boilerplate 🔥
 
 - 📱 **React Native** — version **0.64.0**
 - 🎉 **TypeScript** - Type checking
