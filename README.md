@@ -1,6 +1,6 @@
-# 📱 prime react native boilerplate (beta)
-
-<img src="./showcase/prime-react-native.jpg" width="750">
+<p align="center">
+  <img src="./showcase/prime-react-native.jpg" width="750">
+</p>
 
 The ultimate collection of production-ready, flexible and accessible React Native Boilerplate 🔥
 
